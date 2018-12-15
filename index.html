@@ -25,6 +25,7 @@
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <link rel="stylesheet" href="css/normalize.css">
       <link rel="stylesheet" href="css/skeleton.css">
+      <link rel="stylesheet" href="css/style.css">
     
       <!-- Favicon
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -50,9 +51,11 @@
                 </div>
                 <!--pc_navi-->
                 
-                <a class="facebook" href=""><img class="u-max-full-width" src="images/top_sp/fb.png" alt="facebook" srcset="images/top_sp/fb@2x.png 2x"></a>
-                <a class="Instagram" href=""><img class="u-max-full-width" src="images/top_sp/insta.png" alt="instagram" srcset="images/top_sp/insta@2x.png 2x"></a>
-                <a class="sp_navi navi_btn" href=""><img class="u-max-full-width" src="images/top_sp/menu_icon.png" alt="menu icon"  srcset="images/top_sp/menu_icon@2x.png 2x"></a>
+                <div id="sp_navi">
+                    <a class="facebook" href=""><img class="u-max-full-width" src="images/top_sp/fb.png" alt="facebook" srcset="images/top_sp/fb@2x.png 2x"></a>
+                    <a class="Instagram" href=""><img class="u-max-full-width" src="images/top_sp/insta.png" alt="instagram" srcset="images/top_sp/insta@2x.png 2x"></a>
+                    <a class="menu_btn" href=""><img class="u-max-full-width" src="images/top_sp/menu_icon.png" alt="menu icon"  srcset="images/top_sp/menu_icon@2x.png 2x"></a>
+                </div>
             </nav>
         </header>
         
@@ -66,89 +69,93 @@
                         <!--carousel-->
                         
                         <section class="new_items">
-                            <h2><img class="u-max-full-width" src="images/top/title_newitems.png" alt="new items" srcset="images/top_sp/title_newitems@2x.png 2x"></h2>
-                            <div class="item content">
-                                <img class="u-max-full-width" class="item_image" class="u-max-full-width" src="images/top/item_01.jpg" alt="item1">
-                                <p class="item_name">商品名が入ります商品名が入ります商品名が入ります</p>
-                                <div class="item_prace">￥10,000 (tax in)</div>
-                            </div>
-                            
-                            <div class="item content">
-                                <img class="u-max-full-width" class="u-max-full-width" class="item_image" src="images/top/item_02.jpg" alt="item2">
-                                <p class="item_name">商品名が入ります商品名が入ります商品名が入ります</p>
-                                <div class="item_prace">￥10,000 (tax in)</div>
-                            </div>
-                            
-                            <div class="item content">
-                                <img class="u-max-full-width" class="item_image" src="images/top/item_03.jpg" alt="item3">
-                                <p class="item_name">商品名が入ります商品名が入ります商品名が入ります</p>
-                                <div class="item_prace">￥10,000 (tax in)</div>
-                            </div>
-                            
-                            <div class="item content">
-                                <img class="u-max-full-width" class="item_image" src="images/top/item_04.jpg" alt="item4">
-                                <p class="item_name">商品名が入ります商品名が入ります商品名が入ります</p>
-                                <div class="item_prace">￥10,000 (tax in)</div>
-                            </div>
-                            
-                            <div class="item content">
-                                <img class="u-max-full-width" class="item_image" src="images/top/item_05.jpg" alt="item5">
-                                <p class="item_name">商品名が入ります商品名が入ります商品名が入ります</p>
-                                <div class="item_prace">￥10,000 (tax in)</div>
-                            </div>
-                            
-                            <div class="item content">
-                                <img class="u-max-full-width" class="item_image" src="images/top/item_06.jpg" alt="item6">
-                                <p class="item_name">商品名が入ります商品名が入ります商品名が入ります</p>
-                                <div class="item_prace">￥10,000 (tax in)</div>
+                            <h2><img class="u-max-full-width" src="images/top_sp/title_new_item.png" alt="new items" srcset="images/top_sp/title_new_item@2x.png 2x"></h2>
+                            <div class="items">
+                                <div class="item content">
+                                    <img class="u-max-full-width" class="item_image" class="u-max-full-width" src="images/top/item_01.jpg" alt="item1">
+                                    <p class="item_name">商品名が入ります商品名が入ります商品名が入ります</p>
+                                    <div class="item_prace">￥10,000 (tax in)</div>
+                                </div>
+                                
+                                <div class="item content">
+                                    <img class="u-max-full-width" class="u-max-full-width" class="item_image" src="images/top/item_02.jpg" alt="item2">
+                                    <p class="item_name">商品名が入ります商品名が入ります商品名が入ります</p>
+                                    <div class="item_prace">￥10,000 (tax in)</div>
+                                </div>
+                                
+                                <div class="item content">
+                                    <img class="u-max-full-width" class="item_image" src="images/top/item_03.jpg" alt="item3">
+                                    <p class="item_name">商品名が入ります商品名が入ります商品名が入ります</p>
+                                    <div class="item_prace">￥10,000 (tax in)</div>
+                                </div>
+                                
+                                <div class="item content">
+                                    <img class="u-max-full-width" class="item_image" src="images/top/item_04.jpg" alt="item4">
+                                    <p class="item_name">商品名が入ります商品名が入ります商品名が入ります</p>
+                                    <div class="item_prace">￥10,000 (tax in)</div>
+                                </div>
+                                
+                                <div class="item content">
+                                    <img class="u-max-full-width" class="item_image" src="images/top/item_05.jpg" alt="item5">
+                                    <p class="item_name">商品名が入ります商品名が入ります商品名が入ります</p>
+                                    <div class="item_prace">￥10,000 (tax in)</div>
+                                </div>
+                                
+                                <div class="item content">
+                                    <img class="u-max-full-width" class="item_image" src="images/top/item_06.jpg" alt="item6">
+                                    <p class="item_name">商品名が入ります商品名が入ります商品名が入ります</p>
+                                    <div class="item_prace">￥10,000 (tax in)</div>
+                                </div>
                             </div>
                         </section>
                         <!--new_items-->
                         
                         <section class="popular_items">
-                            <h2><img class="u-max-full-width" src="images/top/title_popular.png" alt="popular items" srcset="images/top_sp/title_popular@2x.png 2x"></h2>
+                            <h2><img class="u-max-full-width" src="images/top_sp/title_popular.png" alt="popular items" srcset="images/top_sp/title_popular@2x.png 2x"></h2>
                             
-                            <div class="item content">
-                                <img class="u-max-full-width" class="item_image" src="images/top/item_07.jpg" alt="item7">
-                                <p class="item_name">商品名が入ります商品名が入ります商品名が入ります</p>
-                                <div class="item_prace">￥10,000 (tax in)</div>
-                            </div>
-                            
-                            <div class="item content">
-                                <img class="u-max-full-width" class="item_image" src="images/top/item_08.jpg" alt="item8">
-                                <p class="item_name">商品名が入ります商品名が入ります商品名が入ります</p>
-                                <div class="item_prace">￥10,000 (tax in)</div>
-                            </div>
-                            
-                            <div class="item content">
-                                <img class="u-max-full-width" class="item_image" src="images/top/item_09.jpg" alt="item9">
-                                <p class="item_name">商品名が入ります商品名が入ります商品名が入ります</p>
-                                <div class="item_prace">￥10,000 (tax in)</div>
-                            </div>
-                            
-                            <div class="item content">
-                                <img class="u-max-full-width" class="item_image" src="images/top/item_10.jpg" alt="item10">
-                                <p class="item_name">商品名が入ります商品名が入ります商品名が入ります</p>
-                                <div class="item_prace">￥10,000 (tax in)</div>
-                            </div>
-                            
-                            <div class="item content">
-                                <img class="u-max-full-width" class="item_image" src="images/top/item_11.jpg" alt="item11">
-                                <p class="item_name">商品名が入ります商品名が入ります商品名が入ります</p>
-                                <div class="item_prace">￥10,000 (tax in)</div>
-                            </div>
-                            
-                            <div class="item content">
-                                <img class="u-max-full-width" class="item_image" src="images/top/item_12.jpg" alt="item12">
-                                <p class="item_name">商品名が入ります商品名が入ります商品名が入ります</p>
-                                <div class="item_prace">￥10,000 (tax in)</div>
+                            <div class="items">
+                                <div class="item content">
+                                    <img class="u-max-full-width" class="item_image" src="images/top/item_07.jpg" alt="item7">
+                                    <p class="item_name">商品名が入ります商品名が入ります商品名が入ります</p>
+                                    <div class="item_prace">￥10,000 (tax in)</div>
+                                </div>
+                                
+                                <div class="item content">
+                                    <img class="u-max-full-width" class="item_image" src="images/top/item_08.jpg" alt="item8">
+                                    <p class="item_name">商品名が入ります商品名が入ります商品名が入ります</p>
+                                    <div class="item_prace">￥10,000 (tax in)</div>
+                                </div>
+                                
+                                <div class="item content">
+                                    <img class="u-max-full-width" class="item_image" src="images/top/item_09.jpg" alt="item9">
+                                    <p class="item_name">商品名が入ります商品名が入ります商品名が入ります</p>
+                                    <div class="item_prace">￥10,000 (tax in)</div>
+                                </div>
+                                
+                                <div class="item content">
+                                    <img class="u-max-full-width" class="item_image" src="images/top/item_10.jpg" alt="item10">
+                                    <p class="item_name">商品名が入ります商品名が入ります商品名が入ります</p>
+                                    <div class="item_prace">￥10,000 (tax in)</div>
+                                </div>
+                                
+                                <div class="item content">
+                                    <img class="u-max-full-width" class="item_image" src="images/top/item_11.jpg" alt="item11">
+                                    <p class="item_name">商品名が入ります商品名が入ります商品名が入ります</p>
+                                    <div class="item_prace">￥10,000 (tax in)</div>
+                                </div>
+                                
+                                <div class="item content">
+                                    <img class="u-max-full-width" class="item_image" src="images/top/item_12.jpg" alt="item12">
+                                    <p class="item_name">商品名が入ります商品名が入ります商品名が入ります</p>
+                                    <div class="item_prace">￥10,000 (tax in)</div>
+                                </div>
                             </div>
                             
                         </section>
                         <!--popular_items-->
                         
                         <section class="shopping_guide">
-                            <h2><img class="u-max-full-width" src="images/top/title_guide.png" alt="shopping guide" srcset="images/top_sp/title_guide@2x.png 2x"></h2>
+                            <h2><img class="u-max-full-width" src="images/top_sp/title_guide.png" alt="shopping guide" srcset="images/top_sp/title_guide@2x.png 2x"></h2>
                             
                             <div class="container">
                                 <div class="row">
@@ -158,11 +165,11 @@
                                             <img class="u-max-full-width" src="images/top/otodoke_banner.png" alt="合計5000円以上で送料無料">
                                             <ul class="guide_li">
                                                 <li>
-                                                    <h4>〇〇運輸</h4>
+                                                    <h4><span class="fa fa-stop"></span>〇〇運輸</h4>
                                                     <p>送料￥000 円</p>
                                                 </li>
                                                 <li>
-                                                    <h4>ゆうパケット</h4>
+                                                    <h4><span class="fa fa-stop"></span>ゆうパケット</h4>
                                                     <p>ポスト投函となります。日時指定不可</p>
                                                 </li>
                                             </ul>
@@ -175,15 +182,15 @@
                                             <h3>決済について</h3>
                                             <ul class="guide_li">
                                                 <li>
-                                                    <h4>カード決済</h4>
+                                                    <h4><span class="fa fa-stop"></span>カード決済</h4>
                                                     <img class="u-max-full-width" src="images/top/cards.png" alt="VISA MasterCard JCB AMEX PayPal">
                                                 </li>
                                                 <li>
-                                                    <h4>代金引換</h4>
+                                                    <h4><span class="fa fa-stop"></span>代金引換</h4>
                                                     <p>代引き手数料が別途かかります</p>
                                                 </li>
                                                 <li>
-                                                    <h4>銀行振込</h4>
+                                                    <h4><span class="fa fa-stop"></span>銀行振込</h4>
                                                     <p>
                                                         お振込手数料お客様負担<br>
                                                         ご入金後の発送となります。
@@ -208,29 +215,29 @@
                                 <h3><img class="u-max-full-width" src="images/top/itemserch.png" alt="item search"></h3>
                                 <form id="search_form">
                                     <input id="search_box" type="text" placeholder="Search..">
-                                    <input id="serch_btn" type="submit" value="検索">
+                                    <input id="search_btn" type="submit" value="">
                                 </form>
                             </div>
                         </section>
                         
                         <section class="pagelink">
-                            <div class="subbar_title">
+                            <div class="subbar_title next">
                                 <a href=""><img class="u-max-full-width" src="images/top/pagelink.png" alt="pagelink"></a>
                             </div>
                         </section>
                         
                         <section class="categories">
-                            <div class="subbar_title">
+                            <div class="subbar_title down">
                                 <img class="u-max-full-width" src="images/top/categories.png" alt="categories">
                             </div>
-                            <div class="subbar_content content">
-                                <ul>
-                                    <li><a href="#">カテゴリー名</a></li>
-                                    <li><a href="#">カテゴリー名</a></li>
-                                    <li><a href="#">カテゴリー名</a></li>
-                                    <li><a href="#">カテゴリー名</a></li>
-                                    <li><a href="#">カテゴリー名</a></li>
-                                    <li><a href="#">カテゴリー名</a></li>
+                            <div class="subbar_content">
+                                <ul class="c_navi">
+                                    <a href=""><li>カテゴリー名</li></a>
+                                    <a href=""><li>カテゴリー名</li></a>
+                                    <a href=""><li>カテゴリー名</li></a>
+                                    <a href=""><li>カテゴリー名</li></a>
+                                    <a href=""><li>カテゴリー名</li></a>
+                                    <a href=""><li>カテゴリー名</li></a>
                                 </ul>
                             </div>
                         </section>
@@ -241,9 +248,13 @@
                             </div>
                             <div class="subbar_content content">
                                 <div class="sub_inner">
-                                    <img class="u-max-full-width" src="images/top/about_img.jpg" alt="shop image">
-                                    <p>お店の説明が入りますお店の説明が入りますお店の説明が入りますお店の説明が入ります</p>
-                                    <a class="image_btn" href="#"><img class="u-max-full-width" src="images/top/more_btn.png" alt="more_bottun"></a>
+                                    <div class="sub_columns">
+                                        <img class="u-max-full-width" src="images/top/about_img.jpg" alt="shop image">
+                                    </div>
+                                    <div class="sub_columns">
+                                        <p>お店の説明が入りますお店の説明が入りますお店の説明が入りますお店の説明が入ります</p>
+                                        <a class="image_btn" href="#"><img class="u-max-full-width" src="images/top/more_btn.png" alt="more_bottun"></a>
+                                    </div>
                                 </div>
                             </div>
                         </section>
@@ -254,9 +265,13 @@
                             </div>
                             <div class="subbar_content content">
                                 <div class="sub_inner">
-                                    <img class="u-max-full-width" src="images/top/shopinfo_img.jpg" alt="shop image">
-                                    <p>お店の説明が入りますお店の説明が入りますお店の説明が入りますお店の説明が入ります</p>
-                                    <a class="image_btn" href="#"><img class="u-max-full-width" src="images/top/more_btn.png" alt="more_bottun"></a>
+                                    <div class="sub_columns">
+                                        <img class="u-max-full-width" src="images/top/shopinfo_img.jpg" alt="shop image">
+                                    </div>
+                                    <div class="sub_columns">
+                                        <p>お店の説明が入りますお店の説明が入りますお店の説明が入りますお店の説明が入ります</p>
+                                        <a class="image_btn" href="#"><img class="u-max-full-width" src="images/top/more_btn.png" alt="more_bottun"></a>
+                                    </div>
                                 </div>
                             </div>
                         </section>
@@ -266,7 +281,7 @@
                 <!--row-->
                 
                 <div class="row">
-                    <div class="twelve columns">
+                    <div class="twelve columns page_jump">
                         <img class="u-max-full-width" src="images/top/pagetop.png" alt="page top">
                     </div>
                 </div>
@@ -277,14 +292,18 @@
         <!--contents-->
         
         <footer>
-           <nav class="foot_navi">
-               <ul>
-                   <li>特定商取引に基づく表記</li>
-                   <li><a href="#">プライバシーポリシー</a></li>
-                   <li><a href="#">マイページ</a></li>
-               </ul>
-           </nav> 
-           <small>copyright (C) APPLE BERRY all rights reserved.</small>
+            <div class="footer_content">
+                <nav class="foot_navi">
+                   <ul>
+                       <li>特定商取引に基づく表記</li>
+                       <li>・</li>
+                       <li><a href="#">プライバシーポリシー</a></li>
+                       <li>・</li>
+                       <li><a href="#">マイページ</a></li>
+                   </ul>
+                </nav> 
+                <small>copyright (C) APPLE BERRY all rights reserved.</small>
+            </div>
         </footer>
     </body>
 </html>

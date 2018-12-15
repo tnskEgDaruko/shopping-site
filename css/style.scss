@@ -1,0 +1,313 @@
+@charset "utf-8";
+
+html {
+    font-size: 62.5%;
+}
+
+@mixin fontsize($size: 24, $base: 10) {
+    font-size: $size + px;
+    font-size: ($size / $base) * 1rem;
+}
+
+$ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Verdana, "ＭＳ　Ｐゴシック", sans-serif;
+
+$baseColor: #f9f8f6;
+$subColor: #887f69;
+$red: #9d1a2d;
+$gray1: #eeeeee;
+$gray2: #b0b0b0;
+
+body {
+    background: $baseColor;
+    font-family: $ja_font;
+}
+
+/* header
+------------------------------------------------- */
+header {
+    text-align: center;
+    
+    .logo {
+        margin-top: 1.5rem;
+    }
+    
+    #sp_navi {
+        margin: 1.2rem auto;
+        letter-spacing: 1.4rem;
+    }
+    
+    #pc_navi {
+        display: none;
+    }
+    
+}
+//header
+
+/* contens
+----------------------------------------------------------- */
+
+.content {
+    background: #fff;
+}
+
+#contents {
+    
+    h2 {
+        text-align: center;
+        margin: 1.6rem auto;
+        @include fontsize(0);
+    }
+    
+    .items {
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+        .item {
+            box-sizing: border-box;
+            padding: 1rem;
+            width: 49%;
+            margin: .1rem .1rem .1rem 0;
+        
+            @include fontsize(12);
+            
+            .item_name {
+                margin-bottom: 1.5rem;
+            }
+            
+            .item_prace {
+                margin-bottom: .5rem;
+            }
+        }
+    }
+    // .items
+    
+    .shopping_guide {
+        .container {
+            padding: 0;
+            width: 98%;
+            
+        }
+        .guide_content {
+            
+            margin: 0 auto;
+            margin-bottom: .5rem;
+            
+            box-sizing: border-box;
+            padding: 2rem;
+            
+            @include fontsize(12);
+            
+            img {
+                margin-bottom: 1rem;
+            }
+            h3 {
+                color: $subColor;
+                @include fontsize(20);
+                font-weight: bold;
+            }
+            .guide_li {
+                li {
+                    list-style: none;
+                    display: inline-block;
+                    margin: 0;
+                    
+                    p {
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+
+            
+            h4 {
+                color: $subColor;
+                @include fontsize(12);
+                font-weight: bold;
+                letter-spacing: .1rem;
+                margin-bottom: 1rem;
+            }
+            
+            
+        }
+    }
+    
+    
+    /* sidebar
+    ------------------------------------------------*/
+    
+    #sidebar {
+        
+        .subbar_content {
+            width: 98%;
+            margin: 0 auto;
+        }
+        
+        .search {
+            h3 {
+                display: none;
+            }
+            
+            
+           #search_form {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               margin: 1rem auto;
+               
+               
+               #search_box, #search_btn {
+                   background: $gray1;
+                   border: transparent;
+                   border-radius: 0;
+                   margin: 3rem 0;
+                   
+               }
+               
+               #search_box {
+                   
+                   width: 80%;
+                   font-style: oblique;
+                   
+                   &::placeholder {
+                       color: #b5b5b5;
+                   }
+               }
+               
+               
+               
+               #search_btn {
+                   box-sizing: border-box;
+                   width: 3rem;
+                   height: auto;
+                   padding: 0 3px;
+                   
+
+                   background-image: url("../images/top/search_icon.png");
+                   background-repeat: no-repeat;
+                   background-position: 50% 50%;
+                    
+               }
+           } 
+        }
+        // search
+        
+        .subbar_title {
+            background: $subColor;
+            box-sizing: border-box;
+            
+            
+            width: 98%;
+            margin: 1rem auto 0 auto;
+            padding: 1.5rem;
+            
+        }
+        
+        .next {
+            
+            background-image: url("../images/top/next_icon.png");
+            background-repeat: no-repeat;
+            background-position: 95% 50%;
+        }
+        
+        .down {
+            background-image: url("../images/top/down_icon.png");
+            background-repeat: no-repeat;
+            background-position: 95% 50%;
+        }
+        
+        .categories {
+            .c_navi {
+                a {
+                    text-decoration: none;
+                    color: #000;
+
+                }
+                
+                li {
+                    box-sizing: border-box;
+                    padding: 1.5rem;
+                    background: #fff;
+                    margin: .2rem auto;
+                    list-style: none;
+                    
+                    background-image: url("../images/top/next_icon_gray.png");
+                    background-repeat: no-repeat;
+                    background-position: 95% 50%;
+                }
+            }
+        }
+        // categories
+        
+        .sub_inner {
+            
+            box-sizing: border-box;
+            display: flex;
+            
+            padding: 1rem;
+            
+            .sub_columns {
+                width: 50%;
+                
+                p, .image_btn {
+                    padding-left: 1rem;
+                    @include fontsize(12);
+                }
+            }
+        }
+        
+    }
+    // #sidebar
+    
+    .page_jump {
+        text-align: center;
+        margin: 2rem auto 0 auto;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #9f9785;
+    }
+}
+// #contents
+
+/* footer
+---------------------------------------------*/
+footer {
+    .footer_content {
+        
+        width: 80%;
+        margin: 2rem auto 10rem auto;
+        @include fontsize(12);
+        text-align: center;
+        
+        .foot_navi {
+        
+            ul {
+                
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-bottom: 0;
+                
+                li {
+                    list-style: none;
+                    margin-right: .5rem;
+                    
+                    a {
+                        text-decoration: none;
+                        color: #000;
+                    }
+                }
+            }
+        }
+        
+        small {
+            color: $gray2;
+            letter-spacing: .1rem;
+        }
+    }
+    
+}
+
+
+
+
+
