@@ -20,8 +20,24 @@ header {
   header #sp_navi {
     margin: 1.2rem auto;
     letter-spacing: 1.4rem; }
-  header #pc_navi {
+  header .head_navi {
+    position: relative; }
+  header #pc_navi .facebook, header #pc_navi .instagram {
     display: none; }
+  header #pc_navi ul {
+    display: none;
+    z-index: 100;
+    text-align: left;
+    border: 1px solid #b0b0b0;
+    position: absolute;
+    top: 100%;
+    left: 50%; }
+    header #pc_navi ul li {
+      list-style: none;
+      padding: 1rem;
+      margin: 0;
+      border-bottom: 1px solid #b0b0b0;
+      background: #f9f8f6; }
   @media (min-width: 551px) {
     header {
       margin-top: 3rem; }
@@ -29,16 +45,31 @@ header {
         display: none; }
       header .logo {
         text-align: left; }
+      header #head_navi {
+        position: static; }
       header #pc_navi {
         display: flex;
-        justify-content: flex-end; }
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-bottom: 2rem; }
+        header #pc_navi .facebook, header #pc_navi .instagram {
+          display: block; }
         header #pc_navi a {
           margin-left: 1.5rem; }
         header #pc_navi ul {
+          display: block;
           display: flex;
-          justify-content: flex-end; }
+          justify-content: flex-end;
+          margin-bottom: 0;
+          text-align: center;
+          position: static;
+          border: transparent; }
           header #pc_navi ul li {
-            list-style: none; } }
+            list-style: none;
+            margin-bottom: 0;
+            background: transparent;
+            border-bottom: transparent;
+            padding: 0; } }
 
 /* contens
 ----------------------------------------------------------- */

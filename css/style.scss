@@ -43,8 +43,35 @@ header {
         letter-spacing: 1.4rem;
     }
     
+    .head_navi {
+        position: relative;
+    }
+    
     #pc_navi {
-        display: none;
+
+        .facebook, .instagram {
+            display: none;
+        }
+        
+        ul {
+            display: none;
+            z-index: 100;
+            text-align: left;
+            border: 1px solid $gray2;
+            
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            
+            li {
+                list-style: none;
+                padding: 1rem;
+                margin: 0;
+                border-bottom: 1px solid $gray2;
+                
+                background: $baseColor;
+            }
+        }
     }
     
     
@@ -60,21 +87,45 @@ header {
         .logo {
             text-align: left;
         }
+        
+        #head_navi {
+            position: static;
+        }
     
         
         #pc_navi {
             display: flex;
             justify-content: flex-end;
+            align-items: flex-end;
+            
+            margin-bottom: 2rem;
+            
+            .facebook, .instagram {
+                display: block;
+            }
             
             a {
                 margin-left: 1.5rem;
             }
             
             ul {
+                display: block;
                 display: flex;
                 justify-content: flex-end;
+                margin-bottom: 0;
+                text-align: center;
+                
+                position: static;
+                
+                
+                border: transparent;
+                
                 li {
                     list-style: none;
+                    margin-bottom: 0;
+                    background: transparent;
+                    border-bottom: transparent;
+                    padding: 0;
                 }
             }
         }
