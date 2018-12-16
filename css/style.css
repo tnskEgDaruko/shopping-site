@@ -1,6 +1,9 @@
 @charset "UTF-8";
-html {
+html body {
   font-size: 62.5%; }
+  html body a {
+    overflow: hidden;
+    text-decoration: none; }
 
 body {
   background: #f9f8f6;
@@ -9,7 +12,9 @@ body {
 /* header
 ------------------------------------------------- */
 header {
-  text-align: center; }
+  text-align: center;
+  /* pc 
+  ----------------------*/ }
   header .logo {
     margin-top: 1.5rem; }
   header #sp_navi {
@@ -17,6 +22,23 @@ header {
     letter-spacing: 1.4rem; }
   header #pc_navi {
     display: none; }
+  @media (min-width: 551px) {
+    header {
+      margin-top: 3rem; }
+      header #sp_navi {
+        display: none; }
+      header .logo {
+        text-align: left; }
+      header #pc_navi {
+        display: flex;
+        justify-content: flex-end; }
+        header #pc_navi a {
+          margin-left: 1.5rem; }
+        header #pc_navi ul {
+          display: flex;
+          justify-content: flex-end; }
+          header #pc_navi ul li {
+            list-style: none; } }
 
 /* contens
 ----------------------------------------------------------- */
@@ -25,7 +47,12 @@ header {
 
 #contents {
   /* sidebar
-  ------------------------------------------------*/ }
+  ------------------------------------------------*/
+  /* pc
+  ---------------------------------*/ }
+  #contents .carousel {
+    width: 98%;
+    margin: 0 auto; }
   #contents h2 {
     text-align: center;
     margin: 1.6rem auto;
@@ -65,7 +92,6 @@ header {
       font-weight: bold; }
     #contents .shopping_guide .guide_content .guide_li li {
       list-style: none;
-      display: inline-block;
       margin: 0; }
       #contents .shopping_guide .guide_content .guide_li li p {
         margin-bottom: 1rem; }
@@ -120,7 +146,9 @@ header {
     background-position: 95% 50%; }
   #contents #sidebar .categories .c_navi a {
     text-decoration: none;
-    color: #000; }
+    color: #000;
+    font-size: 12px;
+    font-size: 1.2rem; }
   #contents #sidebar .categories .c_navi li {
     box-sizing: border-box;
     padding: 1.5rem;
@@ -136,8 +164,9 @@ header {
     padding: 1rem; }
     #contents #sidebar .sub_inner .sub_columns {
       width: 50%; }
-      #contents #sidebar .sub_inner .sub_columns p, #contents #sidebar .sub_inner .sub_columns .image_btn {
-        padding-left: 1rem;
+      #contents #sidebar .sub_inner .sub_columns p, #contents #sidebar .sub_inner .sub_columns a.image_btn {
+        padding-left: 1rem; }
+      #contents #sidebar .sub_inner .sub_columns p {
         font-size: 12px;
         font-size: 1.2rem; }
   #contents .page_jump {
@@ -145,6 +174,49 @@ header {
     margin: 2rem auto 0 auto;
     padding-bottom: 2rem;
     border-bottom: 1px solid #9f9785; }
+  #contents .pc_h2 {
+    display: none; }
+  @media (min-width: 551px) {
+    #contents .sp_h2 {
+      display: none; }
+    #contents .pc_h2 {
+      display: block; }
+    #contents .items .item {
+      width: 33%; }
+    #contents .shopping_guide {
+      margin: 0 auto; }
+      #contents .shopping_guide .shopping_container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0; }
+        #contents .shopping_guide .shopping_container .guide_content, #contents .shopping_guide .shopping_container content {
+          width: 49%;
+          margin: 0; }
+    #contents #sidebar .search h3 {
+      display: block;
+      margin-bottom: 1rem;
+      padding-top: 2rem;
+      font-size: 0; }
+    #contents #sidebar .search .search_content {
+      width: 80%;
+      margin: 0 auto; }
+      #contents #sidebar .search .search_content #search_form {
+        margin-top: 0; }
+        #contents #sidebar .search .search_content #search_form #search_box, #contents #sidebar .search .search_content #search_form #search_btn {
+          margin: 0;
+          margin-bottom: 2rem; }
+    #contents #sidebar .sub_inner {
+      flex-direction: column; }
+      #contents #sidebar .sub_inner .sub_columns {
+        width: 100%; }
+        #contents #sidebar .sub_inner .sub_columns p, #contents #sidebar .sub_inner .sub_columns a.image_btn {
+          padding: 0; }
+        #contents #sidebar .sub_inner .sub_columns .btn_area {
+          text-align: center; }
+    #contents .page_jump {
+      text-align: right;
+      padding-bottom: 1rem; } }
 
 /* footer
 ---------------------------------------------*/

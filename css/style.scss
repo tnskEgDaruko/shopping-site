@@ -1,7 +1,14 @@
 @charset "utf-8";
 
 html {
-    font-size: 62.5%;
+    body {
+        font-size: 62.5%;
+        
+        a {
+            overflow: hidden;
+            text-decoration: none;
+        }
+    }
 }
 
 @mixin fontsize($size: 24, $base: 10) {
@@ -40,6 +47,39 @@ header {
         display: none;
     }
     
+    
+    /* pc 
+    ----------------------*/
+    @media (min-width: 551px) {
+        #sp_navi {
+            display: none;
+        }
+        
+        margin-top: 3rem;
+        
+        .logo {
+            text-align: left;
+        }
+    
+        
+        #pc_navi {
+            display: flex;
+            justify-content: flex-end;
+            
+            a {
+                margin-left: 1.5rem;
+            }
+            
+            ul {
+                display: flex;
+                justify-content: flex-end;
+                li {
+                    list-style: none;
+                }
+            }
+        }
+    }
+    
 }
 //header
 
@@ -51,6 +91,11 @@ header {
 }
 
 #contents {
+    
+    .carousel {
+        width: 98%;
+        margin: 0 auto;
+    }
     
     h2 {
         text-align: center;
@@ -110,7 +155,6 @@ header {
             .guide_li {
                 li {
                     list-style: none;
-                    display: inline-block;
                     margin: 0;
                     
                     p {
@@ -221,6 +265,7 @@ header {
                 a {
                     text-decoration: none;
                     color: #000;
+                    @include fontsize(12);
 
                 }
                 
@@ -249,10 +294,14 @@ header {
             .sub_columns {
                 width: 50%;
                 
-                p, .image_btn {
+                p, a.image_btn {
                     padding-left: 1rem;
+                }
+                
+                p {
                     @include fontsize(12);
                 }
+                
             }
         }
         
@@ -265,6 +314,100 @@ header {
         padding-bottom: 2rem;
         border-bottom: 1px solid #9f9785;
     }
+    
+    .pc_h2 {
+        display: none;
+    }
+    
+    /* pc
+    ---------------------------------*/
+    
+    @media (min-width: 551px) {
+        .sp_h2 {
+            display: none;
+        }
+        
+        .pc_h2 {
+            display: block;
+        }
+        
+        .items {
+            
+            .item {
+                width: 33%;
+            }
+        }
+        
+        .shopping_guide {
+            margin: 0 auto;
+            .shopping_container {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding: 0;
+                
+                .guide_content, content {
+                    width: 49%;
+                    margin: 0;
+                }
+            }
+        }
+        //shopping_guide
+        
+        #sidebar {
+            .search {
+                h3 {
+                    display: block;
+                    margin-bottom: 1rem;
+                    padding-top: 2rem;
+                    font-size: 0;
+                }
+                
+                
+                .search_content {
+                    
+                    width: 80%;
+                    margin: 0 auto;
+                    
+                    #search_form {
+                        margin-top: 0;
+                        
+                        #search_box, #search_btn {
+                            margin: 0;
+                            margin-bottom: 2rem;
+                        }
+                    }
+                }
+                //search_content
+            }
+            // .search
+            
+            .sub_inner {
+                flex-direction: column;
+                
+                .sub_columns {
+                    width: 100%;
+                    
+                    p, a.image_btn {
+                        padding: 0;
+                    }
+                    
+                    .btn_area {
+                        text-align: center;
+                    }
+                    
+                }
+            }
+            // .sub_inner
+        }
+        // #sidebar
+        
+        .page_jump {
+            text-align: right;
+            padding-bottom: 1rem;
+        }
+    }
+    // pc
 }
 // #contents
 
