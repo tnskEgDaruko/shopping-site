@@ -3,6 +3,6 @@
 $(document).ready(function(){
     
     $("#hb_btn").click(function(){
-        $("#pc_navi ul").slideToggle();
+        $("#hb_menu ul").slideToggle();
     });
 });

@@ -48,10 +48,10 @@ header {
     }
     
     #pc_navi {
-
-        .facebook, .instagram {
-            display: none;
-        }
+        display: none;
+    }
+    
+    #hb_menu {
         
         ul {
             display: none;
@@ -94,6 +94,7 @@ header {
     
         
         #pc_navi {
+            display: block;
             display: flex;
             justify-content: flex-end;
             align-items: flex-end;
@@ -109,7 +110,6 @@ header {
             }
             
             ul {
-                display: block;
                 display: flex;
                 justify-content: flex-end;
                 margin-bottom: 0;

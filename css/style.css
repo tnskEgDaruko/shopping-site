@@ -22,9 +22,9 @@ header {
     letter-spacing: 1.4rem; }
   header .head_navi {
     position: relative; }
-  header #pc_navi .facebook, header #pc_navi .instagram {
+  header #pc_navi {
     display: none; }
-  header #pc_navi ul {
+  header #hb_menu ul {
     display: none;
     z-index: 100;
     text-align: left;
@@ -32,7 +32,7 @@ header {
     position: absolute;
     top: 100%;
     left: 50%; }
-    header #pc_navi ul li {
+    header #hb_menu ul li {
       list-style: none;
       padding: 1rem;
       margin: 0;
@@ -48,6 +48,7 @@ header {
       header #head_navi {
         position: static; }
       header #pc_navi {
+        display: block;
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
@@ -57,7 +58,6 @@ header {
         header #pc_navi a {
           margin-left: 1.5rem; }
         header #pc_navi ul {
-          display: block;
           display: flex;
           justify-content: flex-end;
           margin-bottom: 0;
