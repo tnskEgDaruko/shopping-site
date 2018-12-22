@@ -380,14 +380,19 @@ header {
     #contents .product .p_preview {
       display: flex;
       justify-content: space-between;
-      align-items: space-between; }
+      align-content: space-between; }
       #contents .product .p_preview #preview {
-        width: 70%; }
+        width: 71%;
+        align-self: stretch; }
+        #contents .product .p_preview #preview img {
+          height: 100%; }
       #contents .product .p_preview .p_items {
         width: 28%;
-        align-items: space-between; }
+        align-self: stretch;
+        align-content: space-between; }
         #contents .product .p_preview .p_items .p_item {
-          width: 49%; }
+          width: 48.5%;
+          margin-top: 0; }
     #contents .product .p_container {
       display: flex; }
       #contents .product .p_container .p_price_quantity {

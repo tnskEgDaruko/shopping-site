@@ -660,19 +660,26 @@ header {
             .p_preview {
                 display: flex;
                 justify-content: space-between;
-                align-items: space-between;
+                align-content: space-between;
                 
                 #preview {
-                    width: 70%;
+                    width: 71%;
+                    align-self: stretch;
+                    
+                    img {
+                        height: 100%;
+                    }
                     
                 }
                 
                 .p_items {
                     width: 28%;
-                    align-items: space-between;
+                    align-self: stretch;
+                    align-content: space-between;
                     
                     .p_item {
-                        width: 49%;
+                        width: 48.5%;
+                        margin-top: 0;
                     }
                 }
             }
