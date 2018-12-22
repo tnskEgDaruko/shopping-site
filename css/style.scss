@@ -204,7 +204,7 @@ header {
         margin-bottom: .5rem;
     }
     
-    .puroduct {
+    .product {
         .p_content {
             box-sizing: border-box;
             padding: 2rem 1rem;
@@ -306,7 +306,6 @@ header {
         
         .color_size {
             padding-bottom: 1rem;
-            border-bottom: 2px solid $pBorder;
         }
         // .color_size
         
@@ -323,6 +322,7 @@ header {
                 align-items: baseline;
                 padding-bottom: 1rem;
                 border-bottom: 2px solid $pBorder;
+                border-top: 2px solid $pBorder;
                 
                 span {
                     color: #e80f66;
@@ -397,6 +397,7 @@ header {
                 }
             }
         }
+        // .p_description
         
     }
     // .puroduct
@@ -643,7 +644,7 @@ header {
     }
     
     
-    /* pc
+    /* pc #contents
     ---------------------------------*/
     
     @media (min-width: 550px) {
@@ -654,6 +655,46 @@ header {
                 width: 33%;
             }
         }
+        
+        .product {
+            .p_preview {
+                display: flex;
+                justify-content: space-between;
+                align-items: space-between;
+                
+                #preview {
+                    width: 70%;
+                    
+                }
+                
+                .p_items {
+                    width: 28%;
+                    align-items: space-between;
+                    
+                    .p_item {
+                        width: 49%;
+                    }
+                }
+            }
+            // .p_preview
+            
+            .p_container {
+                display: flex;
+                
+                .p_price_quantity {
+                    width : 60%
+                }
+                
+                .cart {
+                    width: 40%;
+                    box-sizing: border-box;
+                    padding-left: 2rem;
+                }
+            }
+            
+            
+        }
+        //. product
         
         .shopping_guide {
             margin: 0 auto;
